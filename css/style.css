@@ -392,6 +392,71 @@ h3{
     color: rgb(36, 36, 36);
 }
 
+/* HOME */
+.titulo-banner-inicio{
+    height: 500px;
+    width: 100%;
+    background-image: url(../assets/img/esports.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+}
+.news-section {
+  padding: 60px 20px;
+  background-color: #0F0F0F;
+  color: #FFFFFF;
+}
+
+.news-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'montserrat', sans-serif;
+  color: white;
+  font-size: 3rem;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 30px;
+}
+
+.news-card {
+  background-color: #1A1A1A;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #ffd500;
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-content h3 {
+  font-size: 3rem;
+  margin-top: 0;
+  font-family: 'montserrat', sans-serif;
+  text-align: left;
+  color: white;
+}
+
+.news-content p {
+  font-family: 'Rajdhani', sans-serif;
+  color: #BDBDBD;
+}
+
+
 /* Footer */
 footer{
     width: 100%;
