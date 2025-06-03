@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(../assets/fonts/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: "inter";
+    src: url(../assets/fonts/Inter-Bold-slnt=0.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    background-color: black;
+}
+.logo-nav{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.navbar img{
+    height: 50px;
+    width: 50px;
+    padding-left: 40px;
+}.nombre-logo{
+    color: #ffd500;
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.nav-links{
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    margin-right: 40px;
+    align-items: center;
+}
+.nav-links li{
+    list-style: none;
+}.nav-links li a{
+    color: white;
+    text-decoration: none;
+}.nav-links li a:hover{
+    color: #ffd500;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}.banner h1{
+    font-family: inter;
+}
