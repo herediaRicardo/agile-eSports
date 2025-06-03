@@ -31,7 +31,7 @@
     width: 50px;
     padding-left: 40px;
 }.nombre-logo{
-    color: #ffd500;
+    color: white;
     font-size: 25px;
     padding-left: 10px;
     font-weight: bold;
@@ -49,14 +49,374 @@
 }.nav-links li a{
     color: white;
     text-decoration: none;
+    transition: 0.5s;
 }.nav-links li a:hover{
     color: #ffd500;
 }
-
 .banner{
     width: 100%;
     height: 600px;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }.banner h1{
     font-family: inter;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+.teams-body .banner{
+   height: 180px;
+   color: black;
+   background-color: white;
+}.teams-body .banner h1{
+    font-size: 5vw;
+    color: black;
+}
+/* Seccion Cards Games*/
+.box-container{
+    width: 100%;
+    height: auto;
+    padding: 80px 20px 80px 20px;
+    background-color: rgb(228, 228, 228);
+}
+.cards-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card-games{
+    height: 480px;
+    width: 320px;    
+    transition: 0.5s;
+}.card-games:hover{
+  filter: brightness(1.2) sepia(1) hue-rotate(10deg) saturate(5);
+  transition: filter 0.3s ease;
+}
+.card-games a{
+    text-decoration: none;
+}.card-games a h4:hover{
+    color: black;
+    transition: 0.5s;
+}
+.card-games a h4{    
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding-top: 400px;
+    text-decoration: none;
+}
+.img-cs{     
+    height: 100%;
+    width: 100%;  
+    background-image: url(../assets/img/cs2.webp);
+    background-size: cover;
+}
+.img-lol{     
+    height: 100%;
+    width: 100%;  
+    background-image: url(../assets/img/lol.webp);
+    background-size: cover;
+}
+.img-val{     
+    height: 100%;
+    width: 100%;  
+    background-image: url(../assets/img/valorant.webp);
+    background-size: cover;
+}
+.img-sim{     
+    height: 100%;
+    width: 100%;  
+    background-image: url(../assets/img/simracing.webp);
+    background-size: cover;
+}
+.img-rocket{     
+    height: 100%;
+    width: 100%;  
+    background-image: url(../assets/img/rocketleague.webp);
+    background-size: cover;
+}
+
+h3{
+    font-size: 4rem;
+    text-align: center;
+    font-family: "montserrat";
+    padding: 10px 0px 50px 0px;
+}
+
+.card-player{
+    height: auto;
+    width: 320px;    
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    border: 1.5px solid black;
+}.card-player img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}.card-player .nombre-jugador{
+    height: 20%;
+    width: auto;
+    background-color: white;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}.nombre-jugador span{
+    font-size: 2rem;
+    font-weight: bold;
+}.card-player:hover{
+    filter: invert(0.1);
+    scale: 1.01;
+}
+
+.volver{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
+    color: #adadad;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}.volver img{
+    width: 40px;
+}.volver:hover{
+    filter: invert(0.5);
+}
+
+.banner-sim{
+    background-image: url(../assets/img/simracing.webp);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    font-size: 50px;
+    color: black;
+}
+.banner-cs{
+    background-image: url(../assets/img/cs2.webp);
+    width: 100%;
+    height: 300px;
+    background-position: center 25%;
+    background-size: cover;
+    font-size: 50px;
+    color: black;
+}
+.banner-lol{
+    background-image: url(../assets/img/lol.webp);
+    width: 100%;
+    height: 300px;
+    background-position: center 25%;
+    background-size: cover;
+    font-size: 50px;
+    color: black;
+}
+.banner-val{
+    background-image: url(../assets/img/valorant.webp);
+    width: 100%;
+    height: 300px;
+    background-position: center 25%;
+    background-size: cover;
+    font-size: 50px;
+    color: black;
+}
+.banner-rocket{
+    background-image: url(../assets/img/rocketleague.webp);
+    width: 100%;
+    height: 300px;
+    background-position: center 25%;
+    font-size: 50px;
+    color: black;
+}
+.banner-game{
+    color: #ffd500;
+    font-size: 7vw;
+    padding-top: 100px;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+}
+
+/* About*/
+.titulo-banner-about{
+    height: 50vw;
+}
+.fondo-about{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/player-4.webp);
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center 10%;
+}.titulo-banner-about h1{
+    text-align: center;
+    font-size: 7vw;
+    color: white;
+    padding-top: 120px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+#about .container h1{
+    font-size: 60px;
+    padding: 40px;
+    text-align: center;
+}
+
+#about .container{    
+    display: flex;
+    width: 8100;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-bloque{
+    height: 200px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.uno{
+    height: auto;
+    text-align: center;
+    justify-self: center;
+    padding: 60px 0px 100px 0px;
+}
+
+.dos{
+  width: 100%;
+  height: 350px;
+  text-align: right;
+  background-color: black;
+  padding: 60px 0px 00px 0px;
+  color: #ffd500;
+}
+
+.about-bloque h2{
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+.uno p{
+    width: 50%;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    font-family: "montserrat";
+    justify-self: center;
+}
+.dos p{
+    width: 50%;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center; 
+    font-family: "montserrat";
+    font-weight: lighter;
+    justify-self: center;
+}
+
+/* SOCIOS */
+
+.titulo-banner-socios{
+    height: 30vw;
+}
+.fondo-socios{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/team-1.webp);
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center 10%;
+}.titulo-banner-socios h1{
+    text-align: center;
+    font-size: 7vw;
+    color: white;
+    padding-top: 140px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+.main-sponsor{
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    padding: 20;
+}
+.main-sponsor a{
+    text-decoration: none;
+}
+.main-sponsor a img{
+    padding: 20px 40px 20px 40px;
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    filter: grayscale(1);
+}.main-sponsor a img:hover{
+    filter: grayscale(0);
+}
+
+.consultas{
+   background-color: #ebebeb;
+   padding: 80px 20px 80px 20px;
+   display: flex;
+   flex: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+}
+.consultas img{
+    width: 350px;
+}
+
+.container-consultas{
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+}
+
+.tarjetas-consultas{
+    padding-bottom: 50px;
+}
+.tarjetas-consultas a{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    border-top: 5px solid #ffd500;
+}footer p{
+    padding-left: 25px;
+    width: 40%;
+}
+
+.container-terminos{
+    display: flex;
+    width: 60%;       
+    gap: 25px;
+    justify-content: right;
+    padding-right: 25px; 
+}
+.container-terminos a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
 }
